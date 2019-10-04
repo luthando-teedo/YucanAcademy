@@ -1,0 +1,98 @@
+body {
+	font-family: sans-serif;
+	padding: 15px;
+	background-color: #f7f7f7;
+	padding: 15px;
+}
+
+h1 {
+	text-align: center;
+	color: #000;
+	margin: 30px 0 50px;
+	display: block;
+	font-size: 45px;
+	font-weight: 900;
+	letter-spacing: 0px;
+	animation-name: moveInLeft;
+	animation-duration: 3s;
+	animation-iteration-count: easy-out;
+}
+
+@keyframes moveInLeft {
+		0%{
+			opacity: 0;
+			transform: translateX(100px);
+		}
+
+		80% {
+			transform: translateX(10px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translate(0);
+		}
+}
+
+.gallery {
+	margin: 10px 50px 0 150px;
+	position: relative;
+
+}
+
+.gallery img {
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.gallery img:hover {
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
+
+.btn-text1 {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	border-radius: 100px;
+	top: 90px;
+	left: 150px;
+	color: red;
+	background-color: #b21d1d;
+	padding: 15px;
+	width: 100px;
+}
+.btn-text1 a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-text1:hover {
+	width: 105px;
+	box-shadow: -0 5px 5px rgba(0,0,0,.4);
+
+}
+
+.btn-text2 {
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	border-radius: 100px;
+	top: 50px;
+	left: 1050px;
+	margin-bottom: 50px;
+	background-color: #b21d1d;
+	padding: 15px;
+	width: 100px;
+}
+.btn-text2 a {
+	text-decoration: none;
+	color: white;
+}
+
+.btn-text2:hover {
+	width: 105px;
+	box-shadow: -0 5px 5px rgba(0,0,0,.4);
+
+}
